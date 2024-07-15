@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22690"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SafariExtensionViewController" customModule="ExportWebSite_Extension" customModuleProvider="target">
+            <connections>
+                <outlet property="txtDEstinationURL" destination="Nep-tK-atS" id="OMf-U3-BiK"/>
+                <outlet property="txtSourceURL" destination="jzi-2X-IAk" id="prZ-Yg-iX3"/>
+                <outlet property="view" destination="c22-O7-iKe" id="vwT-Xx-Aiz"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="463" height="256"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Djy-5K-IPR">
+                    <rect key="frame" x="0.0" y="8" width="463" height="242"/>
+                    <subviews>
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MFO-Bi-qg9">
+                            <rect key="frame" x="18" y="172" width="267" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="263" id="Wb8-EL-EBD"/>
+                            </constraints>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Enter your source url" id="eLx-Fe-3yI">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField focusRingType="none" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nep-tK-atS">
+                            <rect key="frame" x="21" y="60" width="437" height="21"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="n8i-bz-dvt">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Iy-aV-wGF">
+                            <rect key="frame" x="139" y="206" width="161" height="16"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="ExportWebSite Extension" id="2Ec-kd-q2K">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jzi-2X-IAk">
+                            <rect key="frame" x="20" y="133" width="438" height="21"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="Mrq-CB-CUS">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oO0-HU-zVm">
+                            <rect key="frame" x="21" y="20" width="437" height="22"/>
+                            <buttonCell key="cell" type="square" title="Export Website" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="f0O-EA-KE1">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="CmbExport:" target="-2" id="X3l-NR-i8n"/>
+                            </connections>
+                        </button>
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GFo-Oh-RTT">
+                            <rect key="frame" x="19" y="89" width="280" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="276" id="Uo0-Zn-11z"/>
+                            </constraints>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Enter your destination url" id="Bcr-rz-2Am">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="jzi-2X-IAk" secondAttribute="trailing" constant="5" id="Cku-oL-lJH"/>
+                        <constraint firstItem="Nep-tK-atS" firstAttribute="leading" secondItem="oO0-HU-zVm" secondAttribute="leading" id="E71-7O-hLt"/>
+                        <constraint firstAttribute="bottom" secondItem="oO0-HU-zVm" secondAttribute="bottom" constant="20" symbolic="YES" id="EBn-dV-Ub8"/>
+                        <constraint firstItem="jzi-2X-IAk" firstAttribute="centerX" secondItem="Nep-tK-atS" secondAttribute="centerX" id="Hz9-5r-5a1"/>
+                        <constraint firstItem="jzi-2X-IAk" firstAttribute="top" secondItem="MFO-Bi-qg9" secondAttribute="bottom" constant="18" id="LlT-8Z-e4k"/>
+                        <constraint firstItem="4Iy-aV-wGF" firstAttribute="top" secondItem="Djy-5K-IPR" secondAttribute="top" constant="20" symbolic="YES" id="OON-Qq-7ED"/>
+                        <constraint firstItem="MFO-Bi-qg9" firstAttribute="top" secondItem="4Iy-aV-wGF" secondAttribute="bottom" constant="18" id="dwu-o8-9pW"/>
+                        <constraint firstItem="GFo-Oh-RTT" firstAttribute="top" secondItem="jzi-2X-IAk" secondAttribute="bottom" constant="28" id="k2h-1N-iVv"/>
+                        <constraint firstItem="4Iy-aV-wGF" firstAttribute="leading" secondItem="Djy-5K-IPR" secondAttribute="leading" constant="141" id="kdn-mg-3oJ"/>
+                        <constraint firstItem="Nep-tK-atS" firstAttribute="trailing" secondItem="oO0-HU-zVm" secondAttribute="trailing" id="koH-n2-0u4"/>
+                        <constraint firstItem="MFO-Bi-qg9" firstAttribute="leading" secondItem="jzi-2X-IAk" secondAttribute="leading" id="nyT-hp-HjU"/>
+                        <constraint firstItem="Nep-tK-atS" firstAttribute="top" secondItem="GFo-Oh-RTT" secondAttribute="bottom" constant="8" symbolic="YES" id="qdX-NE-VZy"/>
+                        <constraint firstItem="MFO-Bi-qg9" firstAttribute="leading" secondItem="Djy-5K-IPR" secondAttribute="leading" constant="20" symbolic="YES" id="qxP-hq-KgE"/>
+                        <constraint firstItem="oO0-HU-zVm" firstAttribute="top" secondItem="Nep-tK-atS" secondAttribute="bottom" constant="18" id="wKi-03-SMs"/>
+                        <constraint firstItem="jzi-2X-IAk" firstAttribute="trailing" secondItem="Nep-tK-atS" secondAttribute="trailing" id="yIZ-M8-obA"/>
+                        <constraint firstItem="GFo-Oh-RTT" firstAttribute="leading" secondItem="Nep-tK-atS" secondAttribute="leading" id="zfL-gD-QHk"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Djy-5K-IPR" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="6" id="SZr-ck-DYD"/>
+                <constraint firstItem="Djy-5K-IPR" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="b5e-BI-iSE"/>
+                <constraint firstAttribute="trailing" secondItem="Djy-5K-IPR" secondAttribute="trailing" id="bej-hr-6Og"/>
+            </constraints>
+            <point key="canvasLocation" x="159.5" y="137"/>
+        </customView>
+    </objects>
+</document>
